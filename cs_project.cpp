@@ -433,5 +433,77 @@ class Company: public Type{
 	 	system("cls");
 	 	//num++;
 	 }
+	  else 
+	  {
+	  	//n++;
+	  	system("cls");
 	  
+	  	if(num->get_number_of_products()==1)
+	  	{
+	  	 cout<<"You bought only 1 product\n";
+		}
+	
+		else if(num->get_number_of_products()==0)
+		{
+			cout<<"You bought no product. ";
+		}
+	
+		else
+		{
+	  	cout<<"You bought "<<num->get_number_of_products()<<" products\n";
+	  	
+		}
+      }
+	
+	}
+		cout<<"the products are: ";
+		for(int i=0; i<(num->get_number_of_products())+1; i++)
+		{
+		   cout<<products[i]<<endl;
+		}
+	
+	    num->gettotal();
+	    
+	    
+	    
+	    	for(int c=0; c<num->get_number_of_products()+1; c++)
+	    	{
+	    	soldp[p]=products[c];
+	    	p++;
+			}
+
+	  	
+  }
+  
+  else if(n==2)
+  {
+  	string pass;
+	cout<<"enter the password!\n";
+	cin>>pass;
+	if(pass==sold.rpass())
+	{
+		system("cls");
+			cout<<"Today you sold:\n";
+		for(int i=0; i<=p; i++)
+		{
+			cout<<soldp[i]<<endl;
+		}
+		cout<<"\n-------------------------------------------------------------------\n";
+	}
+	
+	else
+	{
+		system("cls");
+		cout<<"You enterd wrong password!\n";
+	}
+  
+  
+  }
+   
+  
+	}
+  
+  
+	
+}
  
